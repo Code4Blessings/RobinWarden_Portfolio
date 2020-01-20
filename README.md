@@ -15,7 +15,7 @@ This was another project I collaborated in, only this time, I was one of the Fro
 This is a project I created with React, CSS, and a useReducer hook.  The way this app works is you type the task in the input section and click "ADD."  The task then displays on a list.  More tasks can be added to the list.  As they are completed, the user can click on the task and this will put a strikethrough on task.  This crossed task can then be deleted from the screen using the "Clear Completed" button.  Images were provided by Unsplash.com.
 
 <strong>Cat Facts App</strong>
-This project I built using React, CSS, Redux and a Cat API.  The way it works is you click on the "Cat Fact" button and the app will give you a random fact about cats.  Images were provided by Unsplash.com.
+This project was built using React, CSS, Redux and a Cat API.  The way it works is you click on the "Cat Fact" button and the app will give you a random fact about cats.  Images were provided by Unsplash.com.
 
 <strong>Pokedex Card Game</strong>
 This game was also created with React. Every time page is refreshed, the app deals two sets of random Pokémon cards.  The deck with the highest total experience gets the winning hand.
