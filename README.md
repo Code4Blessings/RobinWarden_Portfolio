@@ -1,5 +1,5 @@
 # RobinWarden_Portfolio
-Robin Warden's Responsive Portfolio
+Robin Warden's Portfolio
 
 Greetings Potential Employer:
 
