@@ -182,7 +182,7 @@ main {
 .projects {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(4, 1fr); }
   .projects img {
     width: 100%;
     border: 7px #fff solid;
@@ -190,6 +190,11 @@ main {
     .projects img:hover {
       transition: all ease 500ms;
       transform: scale(1.1); }
+
+.tech {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr); }
 
 .boxes {
   display: flex;
@@ -237,11 +242,15 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .tech {
+    grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .tech {
+    grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
