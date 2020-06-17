@@ -3,6 +3,9 @@
     .projects {
         grid-template-columns: repeat(3, 1fr);
     }
+    .tech {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 
@@ -10,6 +13,9 @@
 @include mediaLg {
    .projects {
        grid-template-columns: repeat(3, 1fr);
+   }
+   .tech {
+       grid-template-columns: repeat(4, 1fr);
    }
 }
 
@@ -68,6 +74,7 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+    
 }
 
 //Smartphones
