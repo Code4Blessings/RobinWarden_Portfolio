@@ -98,7 +98,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url("../img/background-3.png");
+    background: url("../img/cover-pic.jpg");
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -175,7 +175,7 @@ main {
     grid-area: job3; }
   .about-info .job {
     background: rgba(132, 55, 5, 0.781);
-    padding: 0.5rem;
+    padding: 1rem;
     border-bottom: #52a7fe 3px solid;
     box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56); }
 
