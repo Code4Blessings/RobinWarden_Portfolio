@@ -117,30 +117,6 @@ main {
     }
 }
 
-//Receipt Tracker App Description
-.description-container {
-    padding: 4rem;
-    min-height: calc(100vh - 60px);
-
-    .project-info {
-        height: 800px;
-        font-size: 35px;
-        display: flex;
-
-        .project-image {
-            height: 400px;
-            width: 600px;
-        }
-
-        .project {
-            height: 500px;
-            width: 500px;
-            margin-left: 50px;
-        }
-    }
-
-}
-
 //Work/Projects
 .projects {
     display: grid;
@@ -219,4 +195,3 @@ main {
 }
 
 @import 'mobile';
-
