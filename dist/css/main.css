@@ -182,7 +182,7 @@ main {
 .projects {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(2, 1fr); }
   .projects img {
     width: 100%;
     border: 7px #fff solid;
@@ -233,7 +233,7 @@ main {
   padding: 1rem;
   background: rgba(58, 24, 2, 0.781);
   color: #fff;
-  height: 60px; }
+  height: 70px; }
 
 @media screen and (min-width: 1171px) {
   .projects {
