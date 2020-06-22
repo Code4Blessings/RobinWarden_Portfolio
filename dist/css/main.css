@@ -95,6 +95,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
   line-height: 1.5; }
   body#bg-img {
     background: url("../img/cover-pic.jpg");
@@ -180,7 +181,7 @@ main {
 
 .projects {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   grid-template-columns: repeat(4, 1fr); }
   .projects img {
     width: 100%;
