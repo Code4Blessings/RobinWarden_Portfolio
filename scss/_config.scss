@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $primary-color: rgba(107, 45, 4, 0.781);
 $secondary-color: #52a7fe;
 $show-home-image: true;
@@ -31,12 +33,13 @@ $background-opacity: 0.8;
 
 //Set Text Color
 @function set-text-color($color) {
-    @if (lightness($color) > 40) {
-        @return #000;
-    }@else {
-        @return #fff;
+    @if (color.channel($color, "lightness", $space: hsl) > 40) {
+      @return #000;
+    } @else {
+      @return #fff;
     }
-}
+  }
+  
 
 //Media Query Mixins
 @mixin mediaSm {
@@ -62,3 +65,4 @@ $background-opacity: 0.8;
         @content;
     }
 }
+
