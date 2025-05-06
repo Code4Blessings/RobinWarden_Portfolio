@@ -1,5 +1,7 @@
-@import 'config';
-@import 'menu';
+@use "sass:color";
+@use 'config';
+@use 'menu';
+@use 'mobile';
 
 
 * {
@@ -7,9 +9,9 @@
 }
 
 body {
-    @include background();
-    background: $primary-color;
-    color: set-text-color($primary-color);
+    @include config.background();
+    background: config.$primary-color;
+    color: config.set-text-color(config.$primary-color);
     height: 100%;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,7 +34,7 @@ font-weight: 600;
 &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2),0.5);
+    background: rgba(color.adjust(config.$primary-color, $lightness: 2%),0.5);
 }
 }
 
@@ -48,7 +50,7 @@ header {
 }
 
 .text-secondary {
-    color: $secondary-color;
+    color: config.$secondary-color;
 }
 
 main {
@@ -63,8 +65,8 @@ main {
             padding: 0.4rem;
 
             &:hover {
-                color: $secondary-color;
-                @include easeOut();
+                color: config.$secondary-color;
+                @include config.easeOut();
             }
         }
     }
@@ -90,7 +92,7 @@ main {
         grid-area: bioimage;
         margin: auto;
         border-radius: 50%;
-        border: $secondary-color 3px solid;
+        border: config.$secondary-color 3px solid;
     }
 
     .bio {
@@ -111,9 +113,9 @@ main {
     }
 
     .job {
-        background: lighten($primary-color, 5);
+        background: color.adjust(config.$primary-color, $lightness: 5%);
         padding: 1rem;
-        border-bottom: $secondary-color 3px solid;
+        border-bottom: config.$secondary-color 3px solid;
         box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
     }
 }
@@ -149,14 +151,14 @@ main {
         border: 3px #fff solid;
         padding: 1.5rem 2.5rem;
         margin-bottom: 3rem;
-        @include easeOut;
+        @include config.easeOut;
 
         &:hover {
             padding: 0.5rem 1rem;
-            background: $secondary-color;
-            color: set-text-color($secondary-color);
+            background: config.$secondary-color;
+            color: config.set-text-color(config.$secondary-color);
             span {
-                color: set-text-color($secondary-color);
+                color: config.set-text-color(config.$secondary-color);
             }
         }
     }
@@ -170,29 +172,28 @@ main {
     margin-bottom: 0.7rem;
     box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
     &:hover {
-        background: $secondary-color;
-        color: set-text-color($secondary-color);
+        background: config.$secondary-color;
+        color: config.set-text-color(config.$secondary-color);
     }
 }
 
 .btn-dark {
     @extend .btn;
-    background: darken($primary-color, 50);
+    background: color.adjust(config.$primary-color
+, $lightness: -50%);
     color: #fff;
 }
 
 .btn-light {
     @extend .btn;
-    background: lighten($primary-color, 50);
+    background: color.adjust(config.$primary-color, $lightness: -50%);
     color: #333;
 }
 
 #main-footer {
     text-align: center;
     padding: 1rem;
-    background: darken($primary-color, 10);
-    color: set-text-color($primary-color);
+    background: color.adjust(config.$primary-color, $lightness: -10%);
+    color: config.set-text-color(config.$primary-color);
     height: 70px;
 }
-
-@import 'mobile';

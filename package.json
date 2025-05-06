@@ -4,14 +4,21 @@
   "description": "Responsive Portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "sass --watch scss:dist/css",
+    "dev": "concurrently \"npm run sass\" \"vite\"",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "author": "Robin Warden",
   "license": "ISC",
   "dependencies": {
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^6.3.0",
     "lodash": "^4.17.15",
     "minimist": "^1.2.5",
-    "node-sass": "^4.12.0"
+    "sass": "^1.87.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "vite": "^6.3.5"
   }
 }
