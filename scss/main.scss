@@ -197,3 +197,54 @@ main {
     color: config.set-text-color(config.$primary-color);
     height: 70px;
 }
+
+.tech-category {
+    margin-bottom: 4rem;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid config.$secondary-color;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+  }
+  
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 4rem;
+    justify-items: center;
+  }
+  
+  .tech-item {
+    text-align: center;
+  
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  
+    span {
+      display: block;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+  .tech-logo {
+    max-width: 80%;
+    height: auto;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+  
+  
