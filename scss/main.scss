@@ -247,4 +247,17 @@ main {
     object-fit: contain;
   }
   
+  .tech-icon {
+    font-size: 3rem;
+    color: #fff;
+    display: block;
+    margin: 0 auto 1rem auto;
+    transition: transform 0.3s ease, color 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.2);
+      color: config.$secondary-color;
+    }
+  }
+  
   
