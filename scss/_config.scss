@@ -3,7 +3,7 @@
 $primary-color: rgba(107, 45, 4, 0.781);
 $secondary-color: #52a7fe;
 $show-home-image: true;
-$home-image: url('../img/cover-pic.jpg');
+$home-image: url('/img/cover-pic.jpg');
 $background-opacity: 0.8;
 
 @mixin easeOut {
