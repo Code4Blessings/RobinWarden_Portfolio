@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    { "source": "/about", "destination": "/scss/about.html" },
+    { "source": "/tech", "destination": "/scss/tech.html" },
+    { "source": "/contact", "destination": "/scss/contact.html" },
+    { "source": "/work", "destination": "/scss/work.html" },
+    { "source": "/todo", "destination": "/scss/todo.html" },
+    { "source": "/spotify", "destination": "/scss/spotify.html" },
+    { "source": "/farmFresh", "destination": "/scss/farmFresh.html" },
+    { "source": "/catFacts", "destination": "/scss/catFacts.html" },
+    { "source": "/rta", "destination": "/scss/rta.html" }
+  ]
+}
