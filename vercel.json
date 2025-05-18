@@ -1,13 +1,13 @@
 {
   "rewrites": [
-    { "source": "/about", "destination": "/scss/about.html" },
-    { "source": "/tech", "destination": "/scss/tech.html" },
-    { "source": "/contact", "destination": "/scss/contact.html" },
-    { "source": "/work", "destination": "/scss/work.html" },
-    { "source": "/todo", "destination": "/scss/todo.html" },
-    { "source": "/spotify", "destination": "/scss/spotify.html" },
-    { "source": "/farmFresh", "destination": "/scss/farmFresh.html" },
-    { "source": "/catFacts", "destination": "/scss/catFacts.html" },
-    { "source": "/rta", "destination": "/scss/rta.html" }
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/tech", "destination": "/tech.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/work", "destination": "/work.html" },
+    { "source": "/todo", "destination": "/todo.html" },
+    { "source": "/spotify", "destination": "/spotify.html" },
+    { "source": "/farmFresh", "destination": "/farmFresh.html" },
+    { "source": "/catFacts", "destination": "/catFacts.html" },
+    { "source": "/rta", "destination": "/rta.html" }
   ]
 }
