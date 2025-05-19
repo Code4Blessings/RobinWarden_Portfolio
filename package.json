@@ -3,23 +3,23 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio",
   "main": "index.js",
-  "scripts": {
-    "sass": "sass --watch scss:dist/css",
-    "dev": "concurrently \"npm run sass\" \"vite\"",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+ "scripts": {
+  "sass": "npx sass scss/main.scss dist/css/main.css",
+  "dev": "concurrently \"npm run sass\" \"vite\"",
+  "build": "vite build && npm run sass",
+  "preview": "vite preview"
+},
   "author": "Robin Warden",
   "license": "ISC",
   "dependencies": {
     "gh-pages": "^6.3.0",
     "lodash": "^4.17.15",
-    "minimist": "^1.2.5",
-    "sass": "^1.87.0"
+    "minimist": "^1.2.5"
   },
   "devDependencies": {
     "@playwright/test": "^1.52.0",
     "concurrently": "^9.1.2",
+    "sass": "^1.89.0",
     "vite": "^6.3.5"
   }
 }
