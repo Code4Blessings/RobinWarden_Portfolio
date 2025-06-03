@@ -14,7 +14,15 @@ export default defineConfig({
         contact: resolve(__dirname, 'contact.html'),
         tech: resolve(__dirname, 'tech.html'),
         work: resolve(__dirname, 'work.html'),
-        // Add other HTML files here as needed
+        todo: resolve(__dirname, 'todo.html'),
+        spotify: resolve(__dirname, 'spotify.html'),
+        farmFresh: resolve(__dirname, 'farmFresh.html'),
+        catFacts: resolve(__dirname, 'catFacts.html'),
+        rta: resolve(__dirname, 'rta.html'),
+        cozyAnimals: resolve(__dirname, 'cozyAnimals.html'),
+        code4serenity: resolve(__dirname, 'code4serenity.html'),
+        logo: resolve(__dirname, 'logo.html'),
+        landingPage: resolve(__dirname, 'landingPage.html')
       }
     }
   },
