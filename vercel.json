@@ -8,6 +8,10 @@
     { "source": "/spotify", "destination": "/spotify.html" },
     { "source": "/farmFresh", "destination": "/farmFresh.html" },
     { "source": "/catFacts", "destination": "/catFacts.html" },
-    { "source": "/rta", "destination": "/rta.html" }
+    { "source": "/rta", "destination": "/rta.html" },
+    { "source": "/cozyAnimals", "destination": "/cozyAnimals.html" },
+    { "source": "/code4serenity", "destination": "/code4serenity.html" },
+    { "source": "/logo", "destination": "/logo.html" },
+    { "source": "/landingPage", "destination": "/landingPage.html" }
   ]
 }
