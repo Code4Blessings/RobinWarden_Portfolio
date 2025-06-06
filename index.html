@@ -1,82 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <script src="https://kit.fontawesome.com/073d146f1b.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/dist/css/main.css" /> 
-        <title>Robin Warden's Portfolio</title>
-      </head>
-      
-<body id="bg-img">
-    <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/073d146f1b.js" crossorigin="anonymous"></script>
+    <title>Robin Warden's Portfolio</title>
+  </head>
+
+  <body class="bg-[rgba(107,45,4,0.781)] text-white h-full m-0 font-sans text-[20px] leading-[1.5]">
+    <!-- Header with nav -->
+    <header class="fixed top-0 left-0 w-full bg-primary-overlay z-50 shadow-md">
+      <div class="p-4 flex justify-between items-center max-w-7xl mx-auto">
+        <div class="menu-btn hidden">
+          <div class="btn-line bg-white h-1 w-6 mb-1"></div>
+          <div class="btn-line bg-white h-1 w-6 mb-1"></div>
+          <div class="btn-line bg-white h-1 w-6"></div>
         </div>
 
-      <nav class="menu">
-            <div class="menu-branding">
-                <div class="portrait"></div>
-            </div>
-            <ul class="menu-nav">
-                <li class="nav-item">
-                    <a href="/" class="nav-link">Home
-                    </a>
-                </li>
-                <li class="nav-item current">
-                    <a href="/about" class="nav-link">About Me
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="/tech" class="nav-link">Tech Skills
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="/work" class="nav-link">My Work
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="/contact" class="nav-link">How To Reach Me
-                    </a>
-                </li>
-            </ul>
+        <nav class="hidden md:flex space-x-6">
+          <a href="/" class="hover:text-secondary">Home</a>
+          <a href="/about" class="text-secondary font-bold">About Me</a>
+          <a href="/tech" class="hover:text-secondary">Tech Skills</a>
+          <a href="/work" class="hover:text-secondary">My Work</a>
+          <a href="/contact" class="hover:text-secondary">How To Reach Me</a>
         </nav>
+      </div>
     </header>
 
-    <main id="home">
-        <h1 class="lg-heading">
-            Robin <span class="text-secondary">Warden</span>
-        </h1>
-        <h2 class="sm-heading">
-            Software Engineer | Frontend & API Developer | AI Automation Enthusiast
-        </h2>
-        <p>Innovative Software Engineer skilled in React, APIs, and AI-driven automation. I build clean, scalable, user-first experiences with modern tools, powerful workflows, and purposeful design.</p>
-        <div class="icons">
-            <a href="https://www.instagram.com/code4serenitycoloringbooks">
-            <i class="fab fa-instagram fa-2x"></i>
-            </a>
-            <a href="https://www.tiktok.com/@code4serenity_2008">
-            <i class="fab fa-tiktok fa-2x"></i>
-            </a>
-            
-            <a href="https://www.linkedin.com/in/robin-warden-7126b054/">
-            <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://github.com/Code4Blessings">
-            <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a href="hhttps://www.pinterest.com/code4serenity/">
-            <i class="fab fa-pinterest fa-2x"></i>
-            </a>
-        </div>
-    </main>
-    <footer id="main-footer">
-        Copyright &copy; May 2025 | Images provided by unsplash.com and pexels.com
-    </footer>
-   <script src="/js/main.js" defer></script>
+    <!-- Main Hero Section -->
+    <main id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-32">
+      <h1 class="text-6xl font-bold mb-4 leading-tight">
+        Robin <span class="text-secondary">Warden</span>
+      </h1>
+      <h2 class="text-2xl font-semibold bg-[rgba(107,45,4,0.5)] px-4 py-2 rounded-md">
+        Software Engineer | Frontend & API Developer | AI Automation Enthusiast
+      </h2>
+      <p class="mt-6 max-w-3xl text-lg leading-relaxed text-white/90">
+        Innovative Software Engineer skilled in React, APIs, and AI-driven automation.
+        I build clean, scalable, user-first experiences with modern tools, powerful workflows,
+        and purposeful design.
+      </p>
 
-</body>
+      <!-- Social Icons -->
+      <div class="mt-6 flex space-x-4">
+        <a href="https://www.instagram.com/code4serenitycoloringbooks" class="hover:text-secondary" target="_blank">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://www.tiktok.com/@code4serenity_2008" class="hover:text-secondary" target="_blank">
+          <i class="fab fa-tiktok fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/robin-warden-7126b054/" class="hover:text-secondary" target="_blank">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/Code4Blessings" class="hover:text-secondary" target="_blank">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.pinterest.com/code4serenity/" class="hover:text-secondary" target="_blank">
+          <i class="fab fa-pinterest fa-2x"></i>
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 mt-10 text-sm text-white/70">
+      Copyright &copy; May 2025 |
+      Images provided by Unsplash.com and Pexels.com
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
